@@ -29,12 +29,6 @@ export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const [isVideoPlaying, setIsVideoPlaying] = useState({
-    video1: false,
-    video2: false,
-  });
-  const video1Ref = useRef<HTMLVideoElement>(null);
-  const video2Ref = useRef<HTMLVideoElement>(null);
 
   const [formData, setFormData] = useState({
     name: "",
