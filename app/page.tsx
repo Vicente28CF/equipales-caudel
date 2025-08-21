@@ -76,23 +76,6 @@ export default function Home() {
     }
   };
 
-  const toggleVideo = (videoNumber: 1 | 2) => {
-    const videoRef = videoNumber === 1 ? video1Ref : video2Ref;
-    const videoKey = videoNumber === 1 ? "video1" : "video2";
-
-    if (videoRef.current) {
-      if (isVideoPlaying[videoKey]) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsVideoPlaying((prev) => ({
-        ...prev,
-        [videoKey]: !prev[videoKey],
-      }));
-    }
-  };
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
