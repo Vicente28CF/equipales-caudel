@@ -306,6 +306,21 @@ export default function EquipalesPage() {
     );
   };
 
+  const handleWhatsAppQuote = (equipal: any) => {
+    const message = `Hola, me interesa cotizar este producto:
+
+📦 *${equipal.name}*
+💰 Precio: $${equipal.price.toLocaleString()}
+🖼️ Imagen: ${window.location.origin}${equipal.image}
+
+¿Podrían darme más información y disponibilidad?`;
+
+    const whatsappUrl = `https://wa.me/523311491328?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
       {/* Header */}
@@ -564,7 +579,10 @@ export default function EquipalesPage() {
                     </div>
 
                     <div className="flex space-x-2">
-                      <Button className="flex-1 bg-orange-600 hover:bg-orange-700 transform hover:scale-105 transition-all duration-300">
+                      <Button
+                        onClick={() => handleWhatsAppQuote(equipal)}
+                        className="flex-1 bg-orange-600 hover:bg-orange-700 transform hover:scale-105 transition-all duration-300"
+                      >
                         <ShoppingCart className="w-4 h-4 mr-2" />
                         Cotizar
                       </Button>
