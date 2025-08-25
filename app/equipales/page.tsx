@@ -18,6 +18,21 @@ import {
 import { useState } from "react";
 import Link from "next/link";
 
+interface Equipal {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice: number | null;
+  image: string;
+  category: string;
+  rating: number;
+  reviews: number;
+  description: string;
+  features: string[];
+  badge: string | null;
+  badgeColor: string;
+}
+
 export default function EquipalesPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("todos");
@@ -42,7 +57,7 @@ export default function EquipalesPage() {
     { id: "8000+", name: "$8,000+" },
   ];
 
-  const equipales = [
+  const equipales: Equipal[] = [
     {
       id: 1,
       name: "Equipal Tradicional",
@@ -306,7 +321,7 @@ export default function EquipalesPage() {
     );
   };
 
-  const handleWhatsAppQuote = (equipal: any) => {
+  const handleWhatsAppQuote = (equipal: Equipal) => {
     const message = `Hola, me interesa cotizar este producto:
 
 📦 *${equipal.name}*
