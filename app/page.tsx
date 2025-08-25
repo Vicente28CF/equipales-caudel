@@ -401,7 +401,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-on-scroll">
             <Badge className="mb-4 bg-orange-100 text-orange-800 hover:bg-orange-200 transform hover:scale-105 transition-all duration-300">
-              Conoce sobre nuestra Tradición
+              Conoce nuestro proceso
             </Badge>
             <h3 className="text-4xl font-serif font-bold text-amber-900 mb-4">
               El Arte de Crear Equipales
@@ -413,33 +413,20 @@ export default function Home() {
           </div>
 
           <div className="max-w-4xl mx-auto animate-on-scroll">
-            <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden group hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
+            <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
               {/* Video container with responsive aspect ratio */}
               <div
                 className="relative w-full"
                 style={{ paddingBottom: "56.25%" /* 16:9 aspect ratio */ }}
               >
                 <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/FrqDzCy6g60?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1&fs=1&iv_load_policy=3&cc_load_policy=0&autohide=1&color=white&theme=light"
+                  className="absolute top-0 left-0 w-full h-full pointer-events-auto"
+                  src="https://www.youtube.com/embed/FrqDzCy6g60?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=0&fs=1&iv_load_policy=3&cc_load_policy=0&autohide=1&color=white&theme=light&playsinline=1&enablejsapi=1"
                   title="Equipales Caudel - Proceso Artesanal"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
-              </div>
-
-              {/* Video overlay info */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-white">
-                  <h4 className="text-lg font-semibold mb-2">
-                    Tradición Artesanal
-                  </h4>
-                  <p className="text-sm opacity-90">
-                    Cada equipal es una obra de arte única, creada con técnicas
-                    ancestrales
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -447,11 +434,10 @@ export default function Home() {
             <div className="mt-8 text-center animate-on-scroll">
               <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-orange-200/50">
                 <p className="text-amber-800 leading-relaxed">
-                  Zacoalco de Torres, Jalisco, es cuna de tradiciones
-                  artesanales que se han transmitido por generaciones. Aquí se
-                  crean los famosos equipales, elaborados a mano con gran
-                  dedicación y detalle. Su cultura y artesanía reflejan el
-                  orgullo y la identidad de esta comunidad mexicana.
+                  En este video podrás ver de cerca nuestro proceso artesanal,
+                  desde la selección de la madera hasta los acabados finales.
+                  Cada equipal refleja la dedicación y el conocimiento
+                  transmitido de generación en generación.
                 </p>
               </div>
             </div>
