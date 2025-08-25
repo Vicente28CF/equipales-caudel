@@ -303,7 +303,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-on-scroll bg-gradient-to-r from-amber-100 to-orange-100 overflow-hidden">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-on-scroll bg-gradient-to-b from-orange-50 to-amber-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-on-scroll">
@@ -346,7 +346,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-on-scroll">
-              <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-2xl p-8">
+              <div className="bg-gradient-to-b from-orange-50 to-amber-50 rounded-2xl p-8">
                 <img
                   src="/equipal-caudel.png"
                   alt="Equipal artesanal tradicional de Jalisco"
