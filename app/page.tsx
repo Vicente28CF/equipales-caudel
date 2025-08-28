@@ -422,9 +422,11 @@ export default function Home() {
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover"
                   controls
+                  controlsList="nodownload"
                   preload="metadata"
                   playsInline
                   poster="/videos/EquipalesCaudel-poster.jpg"
+                  onContextMenu={(e) => e.preventDefault()}
                 >
                   <source src="/videos/EquipalesCaudel.mp4" type="video/mp4" />
                   Tu navegador no soporta la reproducción de video.
