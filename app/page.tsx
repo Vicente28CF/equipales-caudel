@@ -419,14 +419,16 @@ export default function Home() {
                 className="relative w-full"
                 style={{ paddingBottom: "56.25%" /* 16:9 aspect ratio */ }}
               >
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full pointer-events-auto"
-                  src="https://www.youtube.com/embed/FrqDzCy6g60?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=0&fs=1&iv_load_policy=3&cc_load_policy=0&autohide=1&color=white&theme=light&playsinline=1&enablejsapi=1"
-                  title="Equipales Caudel - Proceso Artesanal"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <video
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                  playsInline
+                  poster="/videos/EquipalesCaudel-poster.jpg"
+                >
+                  <source src="/videos/EquipalesCaudel.mp4" type="video/mp4" />
+                  Tu navegador no soporta la reproducción de video.
+                </video>
               </div>
             </div>
 
